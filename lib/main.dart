@@ -18,14 +18,17 @@ class MyApp extends StatelessWidget {
       child: ChangeNotifierProvider(
         create: (ctx) => ListToDo(),
         child: MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'Hello',
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
           home: Scaffold(
             appBar: AppBar(
+
               elevation: 0,
               centerTitle: true,
+
               backgroundColor: Colors.pinkAccent,
               title: Text('TODO List')
             ),
